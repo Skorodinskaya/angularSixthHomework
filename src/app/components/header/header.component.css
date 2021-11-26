@@ -1,0 +1,7 @@
+.header {
+  background: pink;
+  display: flex;
+  justify-content: right;
+  padding: 20px;
+  color: purple;
+}
