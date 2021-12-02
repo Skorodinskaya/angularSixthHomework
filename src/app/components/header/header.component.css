@@ -1,7 +1,7 @@
-.header {
-  background: pink;
-  display: flex;
-  justify-content: right;
-  padding: 20px;
-  color: purple;
-}
+ .header{
+   display: flex;
+   justify-content: right;
+   background: pink;
+   color: purple;
+   padding: 20px;
+ }

@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 import {BehaviorSubject} from "rxjs";
 import {IUser} from "../interfaces";
 
@@ -6,8 +6,6 @@ import {IUser} from "../interfaces";
   providedIn: 'root'
 })
 export class DataTransferService {
-  currentUserSubject = new BehaviorSubject<IUser | null>(null);
 
-  constructor() {
-  }
+  currentUserSubject = new BehaviorSubject<IUser | null>(null)
 }

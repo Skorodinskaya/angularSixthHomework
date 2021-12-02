@@ -18,12 +18,12 @@ export class HeaderComponent implements OnInit {
     this.transferService.currentUserSubject.subscribe(value => {
       if(value){
         this.email = value.email;
-        this.isAdmin = value.is_staff
+        this.isAdmin = value.is_staff;
       }
     })
   }
 
-  toAdmin():void {
+  admin():void {
     this.router.navigate(['admin'])
   }
 }

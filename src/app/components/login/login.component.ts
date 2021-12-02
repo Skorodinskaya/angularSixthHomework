@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
 import {AuthService} from "../../services";
 
@@ -21,7 +21,6 @@ export class LoginComponent implements OnInit {
   }
 
   login():void {
-    // this.authService.login(this.loginForm.getRawValue()).subscribe(()=> {}, error => console.log(error))
-    this.authService.login(this.loginForm.getRawValue()).subscribe()
+    this.authService.login(this.loginForm.getRawValue()).subscribe();
   }
 }
