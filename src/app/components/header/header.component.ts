@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {DataTransferService} from "../../services";
 import {Router} from "@angular/router";
 
@@ -8,22 +8,22 @@ import {Router} from "@angular/router";
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
   email: string;
   isAdmin: boolean;
 
-  constructor(private transferService:DataTransferService, private router:Router) { }
+  constructor(private transferService:DataTransferService, private router:Router) {
+  }
 
   ngOnInit(): void {
     this.transferService.currentUserSubject.subscribe(value => {
-      if(value){
+      if(value) {
         this.email = value.email;
         this.isAdmin = value.is_staff;
       }
     })
   }
 
-  admin():void {
+  toAdmin() {
     this.router.navigate(['admin'])
   }
 }

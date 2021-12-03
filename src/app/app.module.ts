@@ -8,7 +8,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
-import {MainInterceptor} from "./components/main.interceptor";
+import {MainInterceptor} from "./main.interceptor";
 
 @NgModule({
   declarations: [
