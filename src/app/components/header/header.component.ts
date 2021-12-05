@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
     })
   }
 
-  toAdmin() {
+  toAdmin():void {
     this.router.navigate(['admin'])
   }
 }

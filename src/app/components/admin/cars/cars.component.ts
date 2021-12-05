@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {Component, OnInit} from '@angular/core';
 import {CarService} from "../../../services";
 import {ICar} from "../../../interfaces";
 
@@ -15,7 +14,7 @@ export class CarsComponent implements OnInit {
   constructor(private carService:CarService) { }
 
   ngOnInit(): void {
-   this.carService.getALl().subscribe(value => this.cars = value)
+   this.carService.getAll().subscribe(value => this.cars = value)
   }
 
 }

@@ -59,7 +59,7 @@ export class AuthService {
     return localStorage.getItem(this.refreshTokenKey)
   }
 
-  setTokens(tokens: IToken): void {
+  private setTokens(tokens: IToken): void {
     const {access, refresh} = tokens;
 
     this.setAccessToken(access);

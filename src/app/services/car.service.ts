@@ -12,7 +12,7 @@ export class CarService {
   constructor(private httpClient: HttpClient) {
   }
 
-  getALl(): Observable<ICar[]> {
+  getAll(): Observable<ICar[]> {
     return this.httpClient.get<ICar[]>(urls.cars)
   }
 }

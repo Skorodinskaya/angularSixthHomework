@@ -25,7 +25,7 @@ export class MainInterceptor implements HttpInterceptor {
           if(res.status == 403) {
             this.router.navigate(['login'], {
               queryParams:{
-                sessionFile: true
+                sessionFiled: true
               }
             })
           }
